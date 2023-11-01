@@ -11,7 +11,7 @@ export const Sky = () => {
   return (
     <div>
       <div
-        className={`animate-[dayNight_10s_ease-in-out_infinite]`}
+        className={`animate-[dayNight_20s_ease-in-out_infinite]`}
         style={{
           width: "100%",
           height: "100vh",
@@ -41,7 +41,7 @@ export const Sky = () => {
       {stars.map(({ x, y }, index) => (
         <div
           key={index}
-          className={`animate-[stars_10s_ease-in-out_infinite]`}
+          className={`animate-[stars_20s_ease-in-out_infinite]`}
           style={{
             height: 2,
             width: 2,
