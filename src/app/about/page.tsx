@@ -1,6 +1,70 @@
-import { ExperienceCard } from "@/app/components/ExperienceCard";
-import { EducationCard } from "@/app/components/EducationCard";
-import { SkillCard } from "@/app/components/SkillCard";
+import { ExperienceCard } from "@/app/about/components/ExperienceCard";
+import type { Experience } from "@/app/about/components/ExperienceCard";
+import { EducationCard } from "@/app/about/components/EducationCard";
+import { SkillCard } from "@/app/about/components/SkillCard";
+
+const experiences: Experience[] = [
+  {
+    title: "Javascript Developer",
+    company: "Kinsta, Budapest",
+    date: "Jan 2022 - Present - 1 yr 11 mos",
+    description: [
+      <p>
+        As a member of the Frontend Architect team, I oversaw the maintenance
+        and expansion of an internal <b>component library</b>,{" "}
+        <b>refactoring legacy code</b> and implementing fresh designs throughout
+        the application.
+      </p>,
+      <p>
+        Additionally, I served as the <b>Project Owner</b> for a 6-month
+        project, leading a team of junior developers in the creation of an
+        internal budget tracking application. This role required effective
+        stakeholder communication, feature gathering, task allocation, and
+        responsibility for ticket creation, documentation, and the execution of{" "}
+        <b>agile ceremonies.</b>
+      </p>,
+    ],
+    skills: [
+      "Project Management",
+      "TypeScript",
+      "JavaScript",
+      "React.js",
+      "CSS",
+    ],
+  },
+  {
+    title: "Quality Assurance Associate",
+    company: "Kinsta, Budapest",
+    date: "Aug 2020 - Jan 2022 - 1 yr 6 mos",
+    description: [
+      <p>
+        I was responsible for conducting manual smoke tests, feature tests and
+        regression tests, keeping close contact with design and development,
+        documenting test cases and writing automated tests in nightwatch.js.
+      </p>,
+    ],
+    skills: ["Nightwatch.js", "Quality Assurance"],
+  },
+  {
+    title: "Manual Software Tester",
+    company: "Bug Factory Kft, Budapest",
+    date: "Oct 1019 - Jul 2020 - 10 mos",
+    description: [
+      <p>
+        I led and supervised a team, managed tasks, trained new colleagues,
+        authored documentation, and organized testing processes. I also
+        conducted testing on Android and iOS mobile apps, with thorough
+        documentation of test results.
+      </p>,
+    ],
+    skills: [
+      "Team leading",
+      "New Hire Training",
+      "Quality Assurance",
+      "Software Documentation",
+    ],
+  },
+];
 
 export default function Page() {
   return (
@@ -10,45 +74,7 @@ export default function Page() {
       <h2 className="text-4xl my-2">&#128187; Experience</h2>
       <div className="grid grid-cols-3 gap-7 justify-items-center">
         <div className="grid col-span-2 gap-4">
-          <ExperienceCard
-            title="Javascript Developer"
-            company="Kinsta, Budapest"
-            date="Jan 2022 - Present - 1 yr 11 mos"
-            description={[
-              "As a member of the Frontend Architect team, I oversaw the maintenance and expansion of an internal component library, refactoring legacy code and implementing fresh designs throughout the application.",
-              "Additionally, I served as the Project Owner for a 6-month project, leading a team of junior developers in the creation of an internal budget tracking application. This role required effective stakeholder communication, feature gathering, task allocation, and responsibility for ticket creation, documentation, and the execution of agile ceremonies.",
-            ]}
-            skills={[
-              "Project Management",
-              "TypeScript",
-              "JavaScript",
-              "React.js",
-              "CSS",
-            ]}
-          />
-          <ExperienceCard
-            title="Quality Assurance Associate"
-            company="Kinsta, Budapest"
-            date="Aug 2020 - Jan 2022 - 1 yr 6 mos"
-            description={[
-              "I was responsible for conducting manual smoke tests, feature tests and regression tests, keeping close contact with design and development, documenting test cases and writing automated tests in nightwatch.js.",
-            ]}
-            skills={["Nightwatch.js", "Quality Assurance"]}
-          />
-          <ExperienceCard
-            title="Manual Software Tester"
-            company="Bug Factory Kft, Budapest"
-            date="Oct 1019 - Jul 2020 - 10 mos"
-            description={[
-              "I led and supervised a team, managed tasks, trained new colleagues, authored documentation, and organized testing processes. I also conducted testing on Android and iOS mobile apps, with thorough documentation of test results.",
-            ]}
-            skills={[
-              "Team leading",
-              "New Hire Training",
-              "Quality Assurance",
-              "Software Documentation",
-            ]}
-          />
+          <ExperienceCard experiences={experiences} />
         </div>
         <div className="flex flex-col gap-6">
           <EducationCard
