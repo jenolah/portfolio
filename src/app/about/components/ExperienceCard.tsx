@@ -21,11 +21,7 @@ export const ExperienceCard = ({ experiences }: Props) => {
         <p>
           <i>{date}</i>
         </p>
-        <div>
-          {description.map((description) => (
-            <p>{description}</p>
-          ))}
-        </div>
+        <div>{description.map((description) => description)}</div>
         <p>
           <b>Skills: {skills.map((skill) => ` · ${skill}`)}</b>
         </p>
