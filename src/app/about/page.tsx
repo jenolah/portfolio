@@ -1,6 +1,5 @@
 import { ExperienceCard } from "@/app/about/components/ExperienceCard";
 import type { Experience } from "@/app/about/components/ExperienceCard";
-import { EducationCard } from "@/app/about/components/EducationCard";
 import { SkillCard } from "@/app/about/components/SkillCard";
 import { PictureFrame } from "./components/PictureFrame";
 
