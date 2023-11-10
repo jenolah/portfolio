@@ -67,16 +67,16 @@ export default function Page() {
       className="bg-white text-slate-950"
       style={{ width: "21cm", height: "29.7cm" }}
     >
-      <div className="grid grid-cols-4 grid rows-2">
+      <div className="grid grid-cols-4 grid-rows-6 h-full">
         <div className="py-2 bg-green-100 col-span-3 flex flex-col justify-center font-mono">
           <h1 className="text-center text-6xl">Jen Olah</h1>
           <h2 className="text-center">Web developer</h2>
         </div>
         <PictureFrame />
-        <div className="grid col-span-3">
+        <div className="grid col-span-3 row-span-5">
           <ExperienceCard experiences={experiences} />
         </div>
-        <div className="flex flex-col gap-6 justify-self-end pl-4 bg-green-100">
+        <div className="flex flex-col gap-6 pl-4 bg-green-100 row-span-5">
           <SkillCard
             skillType="Skills &#129337;"
             skills={[
