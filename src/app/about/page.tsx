@@ -29,6 +29,7 @@ const experiences: Experience[] = [
       "JavaScript",
       "React.js",
       "CSS",
+      "yarn / npm",
     ],
   },
   {
@@ -51,12 +52,18 @@ const experiences: Experience[] = [
     date: "Oct 1019 - Jul 2020 - 10 mos",
     description: [
       <p>
-        I led and supervised a team, managed tasks, trained new colleagues and
-        organized testing processes. I also conducted manual testing on Android
-        and iOS mobile apps with documentation of test results.
+        I led and supervised a team, managed tasks,{" "}
+        <b>trained new colleagues</b> and organized testing processes. I also
+        conducted manual testing on Android and iOS <b>mobile apps</b> with
+        <b>documentation</b> of test results.
       </p>,
     ],
-    skills: ["Team leading", "New Hire Training", "Quality Assurance"],
+    skills: [
+      "Team leading",
+      "New Hire Training",
+      "Quality Assurance",
+      "Workflow",
+    ],
   },
 ];
 
@@ -72,10 +79,14 @@ export default function Page() {
           <h2 className="text-center">Web developer</h2>
         </div>
         <PictureFrame />
-        <div className="grid col-span-3 row-span-5">
+        <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
+          <SkillCard
+            skillType="About me &#128100;"
+            description="My passion is writing clean quality code and learning new things. Due to my lack of experience my technical knowledge is not the best (yet!) but if you're looking for a dev that goes out of their way to produce quality, that's me."
+          />
           <ExperienceCard experiences={experiences} />
         </div>
-        <div className="flex flex-col gap-6 pl-4 bg-green-100 row-span-5">
+        <div className="flex flex-col gap-6 px-4 py-2 bg-green-100 row-span-5">
           <SkillCard
             skillType="Skills &#129337;"
             skills={[
@@ -98,6 +109,10 @@ export default function Page() {
             date="2015 - 2017"
             description="A Levels:"
             skills={["Mathematics", "Physics", "Chemistry"]}
+          />
+          <SkillCard
+            skillType="Hobbies &#127918;"
+            skills={["Playing guitar", "Playing video games", "Learning Unity"]}
           />
         </div>
       </div>

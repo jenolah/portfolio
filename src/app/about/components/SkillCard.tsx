@@ -3,7 +3,7 @@ type Props = {
   title?: string;
   date?: string;
   description?: string;
-  skills: string[];
+  skills?: string[];
 };
 
 export const SkillCard = ({
@@ -29,11 +29,13 @@ export const SkillCard = ({
         </p>
       )}
       {description && <p>{description}</p>}
-      <ul className="px-4">
-        {skills.map((skills, i) => (
-          <li key={i}>{skills}</li>
-        ))}
-      </ul>
+      {skills && (
+        <ul className="px-4">
+          {skills.map((skills, i) => (
+            <li key={i}>{skills}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
