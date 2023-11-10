@@ -2,6 +2,7 @@ import { ExperienceCard } from "@/app/about/components/ExperienceCard";
 import type { Experience } from "@/app/about/components/ExperienceCard";
 import { EducationCard } from "@/app/about/components/EducationCard";
 import { SkillCard } from "@/app/about/components/SkillCard";
+import { PictureFrame } from "./components/PictureFrame";
 
 const experiences: Experience[] = [
   {
@@ -56,35 +57,28 @@ const experiences: Experience[] = [
         and iOS mobile apps with documentation of test results.
       </p>,
     ],
-    skills: [
-      "Team leading",
-      "New Hire Training",
-      "Quality Assurance",
-      "Software Documentation",
-    ],
+    skills: ["Team leading", "New Hire Training", "Quality Assurance"],
   },
 ];
 
 export default function Page() {
   return (
     <div
-      className="p-6 bg-white p-6 text-slate-950 m-auto"
-      style={{ width: "21cm", height: "29,7cm" }}
+      className="bg-white text-slate-950"
+      style={{ width: "21cm", height: "29.7cm" }}
     >
-      <h1 className="text-center text-6xl">Jen Olah</h1>
-      <h2 className="text-center">Web developer</h2>
-      <div className="grid grid-cols-3 gap-7 justify-items-center">
-        <div className="grid col-span-2 gap-4">
+      <div className="grid grid-cols-4 grid rows-2">
+        <div className="py-2 bg-green-100 col-span-3 flex flex-col justify-center font-mono">
+          <h1 className="text-center text-6xl">Jen Olah</h1>
+          <h2 className="text-center">Web developer</h2>
+        </div>
+        <PictureFrame />
+        <div className="grid col-span-3">
           <ExperienceCard experiences={experiences} />
         </div>
-        <div className="flex flex-col gap-6">
-          <EducationCard
-            school="Brockhill Park College"
-            date="2015 - 2017"
-            aLevels={["Mathematics", "Physics", "Chemistry"]}
-          />
+        <div className="flex flex-col gap-6 justify-self-end pl-4 bg-green-100">
           <SkillCard
-            skillType="&#129337; Skills"
+            skillType="Skills &#129337;"
             skills={[
               "HTML / CSS",
               "JavaScript",
@@ -96,8 +90,13 @@ export default function Page() {
             ]}
           />
           <SkillCard
-            skillType="&#127468;&#127463; Languages"
-            skills={["English", "Hungarian"]}
+            skillType="Languages &#127468;&#127463;"
+            skills={["English - Native", "Hungarian - Native"]}
+          />
+          <EducationCard
+            school="Brockhill Park College"
+            date="2015 - 2017"
+            aLevels={["Mathematics", "Physics", "Chemistry"]}
           />
         </div>
       </div>
