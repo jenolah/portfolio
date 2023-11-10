@@ -14,10 +14,7 @@ type Props = {
 export const ExperienceCard = ({ experiences }: Props) => {
   const allExperiences = experiences.map(
     ({ title, company, date, description, skills }, i) => (
-      <div
-        className="grid p-4 gap-2 border-s-8 border-2 rounded-2xl border-slate-950"
-        key={i}
-      >
+      <div className="grid p-4 gap-2" key={i}>
         <h3>
           <b>{title}</b> ({company})
         </h3>
@@ -36,9 +33,11 @@ export const ExperienceCard = ({ experiences }: Props) => {
     )
   );
   return (
-    <>
-      <h2 className="text-2xl my-2">&#128187; Experience</h2>
+    <div className="bg-white p-7">
+      <h2 className="title">
+        <b>Experience &#128187;</b>
+      </h2>
       {allExperiences}
-    </>
+    </div>
   );
 };
