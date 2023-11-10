@@ -93,10 +93,12 @@ export default function Page() {
             skillType="Languages &#127468;&#127463;"
             skills={["English - Native", "Hungarian - Native"]}
           />
-          <EducationCard
-            school="Brockhill Park College"
+          <SkillCard
+            skillType="Education &#127891;"
+            title="Brockhill Park College"
             date="2015 - 2017"
-            aLevels={["Mathematics", "Physics", "Chemistry"]}
+            description="A Levels:"
+            skills={["Mathematics", "Physics", "Chemistry"]}
           />
         </div>
       </div>
