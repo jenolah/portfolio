@@ -1,22 +1,18 @@
+import type { ReactElement } from "react";
+
 type Props = {
-  skillType: string;
+  header: string;
   title?: string;
   date?: string;
   description?: string;
-  skills?: string[];
+  list?: string[];
 };
 
-export const SkillCard = ({
-  skillType,
-  title,
-  date,
-  description,
-  skills,
-}: Props) => {
+export const Card = ({ header, title, date, description, list }: Props) => {
   return (
     <div className="flex flex-col gap-2">
       <h2 className="title">
-        <b>{skillType}</b>
+        <b>{header}</b>
       </h2>
       {title && (
         <h3>
@@ -29,10 +25,10 @@ export const SkillCard = ({
         </p>
       )}
       {description && <p>{description}</p>}
-      {skills && (
+      {list && (
         <ul className="px-4">
-          {skills.map((skills, i) => (
-            <li key={i}>{skills}</li>
+          {list.map((list, i) => (
+            <li key={i}>{list}</li>
           ))}
         </ul>
       )}

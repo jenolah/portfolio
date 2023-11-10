@@ -1,6 +1,6 @@
 import { ExperienceCard } from "@/app/about/components/ExperienceCard";
 import type { Experience } from "@/app/about/components/ExperienceCard";
-import { SkillCard } from "@/app/about/components/SkillCard";
+import { Card } from "@/app/about/components/Card";
 import { PictureFrame } from "./components/PictureFrame";
 
 const experiences: Experience[] = [
@@ -80,16 +80,16 @@ export default function Page() {
         </div>
         <PictureFrame />
         <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
-          <SkillCard
-            skillType="About me &#128100;"
+          <Card
+            header="About me &#128100;"
             description="My passion is writing clean quality code and learning new things. Due to my lack of experience my technical knowledge is not the best (yet!) but if you're looking for a dev that goes out of their way to produce quality, that's me."
           />
           <ExperienceCard experiences={experiences} />
         </div>
         <div className="flex flex-col gap-6 px-4 py-2 bg-green-100 row-span-5">
-          <SkillCard
-            skillType="Skills &#129337;"
-            skills={[
+          <Card
+            header="Skills &#129337;"
+            list={[
               "HTML / CSS",
               "JavaScript",
               "TypeScript",
@@ -99,20 +99,20 @@ export default function Page() {
               "Next.js",
             ]}
           />
-          <SkillCard
-            skillType="Languages &#127468;&#127463;"
-            skills={["English - Native", "Hungarian - Native"]}
+          <Card
+            header="Languages &#127468;&#127463;"
+            list={["English - Native", "Hungarian - Native"]}
           />
-          <SkillCard
-            skillType="Education &#127891;"
+          <Card
+            header="Education &#127891;"
             title="Brockhill Park College"
             date="2015 - 2017"
             description="A Levels:"
-            skills={["Mathematics", "Physics", "Chemistry"]}
+            list={["Mathematics", "Physics", "Chemistry"]}
           />
-          <SkillCard
-            skillType="Hobbies &#127918;"
-            skills={["Playing guitar", "Playing video games", "Learning Unity"]}
+          <Card
+            header="Hobbies &#127918;"
+            list={["Playing guitar", "Playing video games", "Learning Unity"]}
           />
         </div>
       </div>
