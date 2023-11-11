@@ -82,7 +82,7 @@ export default function Page() {
         <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
           <Card
             header="About me &#128100;"
-            description="My passion is writing clean quality code and learning new things. Due to my lack of experience my technical knowledge is not the best (yet!) but if you're looking for a dev that goes out of their way to produce quality, that's me."
+            description="My passion is writing clean, quality code and learning new things. If you're looking for a dev that goes out of their way to produce quality, that's me."
           />
           <ExperienceCard experiences={experiences} />
         </div>
@@ -112,7 +112,7 @@ export default function Page() {
           />
           <Card
             header="Hobbies &#127918;"
-            list={["Playing guitar", "Playing video games", "Learning Unity"]}
+            list={["Guitar", "Video games", "Game development"]}
           />
         </div>
       </div>
