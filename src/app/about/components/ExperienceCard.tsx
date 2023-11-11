@@ -31,7 +31,8 @@ export const ExperienceCard = ({ experiences }: Props) => {
   return (
     <div className="divide-y divide-y-reverse divide-green-700">
       <h2 className="title">
-        <b>Experience &#128187;</b>
+        <b>Experience</b>
+        <img src="/briefcase.svg" />
       </h2>
       {allExperiences}
     </div>

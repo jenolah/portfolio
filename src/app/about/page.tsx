@@ -7,7 +7,7 @@ const experiences: Experience[] = [
   {
     title: "Javascript Developer",
     company: "Kinsta, Budapest",
-    date: "Jan 2022 - Present - 1 yr 11 mos",
+    date: "Jan 2022 - Dec 2023 - 1 yr 11 mos",
     description: [
       <p>
         As a member of the Frontend Architect team, I oversaw the maintenance
@@ -81,14 +81,16 @@ export default function Page() {
         <PictureFrame />
         <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
           <Card
-            header="About me &#128100;"
-            description="My passion is writing clean, quality code and learning new things. If you're looking for a dev that goes out of their way to produce quality, that's me."
+            header="About me"
+            headerIconPath="/person.svg"
+            description="I have ~2 years experience working as a frontend developer. I retained my QA mindset from my earlier career - I love producing clean, quality code and I love learning new things that help me achieve this."
           />
           <ExperienceCard experiences={experiences} />
         </div>
         <div className="flex flex-col gap-6 px-4 py-2 bg-green-100 row-span-5">
           <Card
-            header="Skills &#129337;"
+            header="Skills"
+            headerIconPath="/lightning.svg"
             list={[
               "HTML / CSS",
               "JavaScript",
@@ -100,18 +102,21 @@ export default function Page() {
             ]}
           />
           <Card
-            header="Languages &#127468;&#127463;"
+            header="Languages"
+            headerIconPath="/flag.svg"
             list={["English - Native", "Hungarian - Native"]}
           />
           <Card
-            header="Education &#127891;"
+            header="Education"
+            headerIconPath="/gradcap.svg"
             title="Brockhill Park College"
             date="2015 - 2017"
             description="A Levels:"
             list={["Mathematics", "Physics", "Chemistry"]}
           />
           <Card
-            header="Hobbies &#127918;"
+            header="Hobbies"
+            headerIconPath="/controller.svg"
             list={["Guitar", "Video games", "Game development"]}
           />
         </div>

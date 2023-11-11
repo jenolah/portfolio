@@ -2,17 +2,26 @@ import type { ReactElement } from "react";
 
 type Props = {
   header: string;
+  headerIconPath?: string;
   title?: string;
   date?: string;
   description?: string;
   list?: string[];
 };
 
-export const Card = ({ header, title, date, description, list }: Props) => {
+export const Card = ({
+  header,
+  headerIconPath,
+  title,
+  date,
+  description,
+  list,
+}: Props) => {
   return (
     <div className="flex flex-col gap-2">
       <h2 className="title">
         <b>{header}</b>
+        {headerIconPath && <img src={headerIconPath} />}
       </h2>
       {title && (
         <h3>
