@@ -28,6 +28,28 @@ const config: Config = {
           "75%": { opacity: "0" },
           "100%": { opacity: "0" },
         },
+        rainbowShadow: {
+          "0%": {
+            boxShadow:
+              "0px 0px 15px 5px rgb(255,0,0), 0px 0px 30px 5px rgb(255,255,0), 0px 0px 45px 5px rgb(0,192,255)",
+          },
+          "25%": {
+            boxShadow:
+              "0px 0px 15px 5px rgb(192,0,255), 0px 0px 30px 5px rgb(255,0,0), 0px 0px 45px 5px rgb(255,255,0)",
+          },
+          "50%": {
+            boxShadow:
+              "0px 0px 15px 5px rgb(0,192,255), 0px 0px 30px 5px rgb(192,0,255), 0px 0px 45px 5px rgb(255,0,0)",
+          },
+          "75%": {
+            boxShadow:
+              "0px 0px 15px 5px rgb(255,255,0), 0px 0px 30px 5px rgb(0,192,255), 0px 0px 45px 5px rgb(192,0,255)",
+          },
+          "100%": {
+            boxShadow:
+              "0px 0px 15px 5px rgb(255,0,0), 0px 0px 30px 5px rgb(255,255,0), 0px 0px 45px 5px rgb(0,192,255)",
+          },
+        },
       },
     },
   },
