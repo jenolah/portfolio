@@ -1,6 +1,6 @@
-import { ExperienceCard } from "@/app/about/components/ExperienceCard";
-import type { Experience } from "@/app/about/components/ExperienceCard";
-import { Card } from "@/app/about/components/Card";
+import { ExperienceCard } from "@/app/cv/components/ExperienceCard";
+import type { Experience } from "@/app/cv/components/ExperienceCard";
+import { Card } from "@/app/cv/components/Card";
 import { PictureFrame } from "./components/PictureFrame";
 
 const experiences: Experience[] = [
@@ -70,13 +70,13 @@ const experiences: Experience[] = [
 export default function Page() {
   return (
     <div
-      className="bg-white text-slate-950"
+      className="bg-white text-slate-950 mx-auto"
       style={{ width: "21cm", height: "29.7cm" }}
     >
       <div className="grid grid-cols-4 grid-rows-6 h-full">
-        <div className="py-2 bg-green-100 col-span-3 flex flex-col justify-center font-mono">
-          <h1 className="text-center text-6xl">Jen Olah</h1>
-          <h2 className="text-center">Web developer</h2>
+        <div className="py-2 bg-green-100 col-span-3 flex flex-col justify-center font-mono relative">
+          <h1 className="text-center text-6xl relative">Jennifer Oláh</h1>
+          <h2 className="text-center relative ">Web developer</h2>
         </div>
         <PictureFrame />
         <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
