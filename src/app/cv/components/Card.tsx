@@ -1,5 +1,3 @@
-import type { ReactElement } from "react";
-
 type Props = {
   header: string;
   headerIconPath?: string;
