@@ -2,6 +2,9 @@ import { ExperienceCard } from "@/app/cv/components/ExperienceCard";
 import type { Experience } from "@/app/cv/components/ExperienceCard";
 import { Card } from "@/app/cv/components/Card";
 import { PictureFrame } from "./components/PictureFrame";
+import { Inter } from "next/font/google";
+
+const inter = Inter({ subsets: ["latin"] });
 
 const experiences: Experience[] = [
   {
@@ -70,7 +73,7 @@ const experiences: Experience[] = [
 export default function Page() {
   return (
     <div
-      className="bg-white text-slate-950 mx-auto"
+      className={`${inter.className} bg-white text-slate-950 mx-auto`}
       style={{ width: "21cm", height: "29.7cm" }}
     >
       <div className="grid grid-cols-4 grid-rows-6 h-full">
