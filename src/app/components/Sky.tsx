@@ -16,7 +16,7 @@ export const Sky = () => {
           width: "100%",
           height: "100vh",
           position: "fixed",
-          zIndex: -9999,
+          zIndex: -1,
         }}
       ></div>
       <div
@@ -25,7 +25,7 @@ export const Sky = () => {
           width: "100%",
           height: "100vh",
           position: "fixed",
-          zIndex: -9998,
+          zIndex: -1,
         }}
       />
       <div
@@ -35,7 +35,7 @@ export const Sky = () => {
           position: "absolute",
           top: "50vh",
           right: "50vw",
-          zIndex: -9997,
+          zIndex: -1,
         }}
       ></div>
       {stars.map(({ x, y }, index) => (
@@ -43,7 +43,7 @@ export const Sky = () => {
           key={index}
           className="animate-stars"
           style={{
-            zIndex: -9996,
+            zIndex: -1,
             height: 2,
             width: 2,
             background: "white",

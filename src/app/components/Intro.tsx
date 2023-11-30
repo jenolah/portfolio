@@ -17,7 +17,7 @@ export const Intro = () => {
       </a>
       <a
         href="/Jen-Eng.pdf"
-        className="center text-center cursor-pointer text-2xl text-white hover:text-slate-950"
+        className="center text-center cursor-pointer text-2xl text-white hover:text-slate-950 animate-pulse"
       >
         OR JUST CHECK IT OUT
       </a>
