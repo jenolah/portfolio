@@ -9,7 +9,7 @@ export const Intro = () => {
         <IconLinks />
       </div>
       <a
-        href="/Jen-CV-Eng.pdf"
+        href="/Jen-Eng.pdf"
         className="p-4 rounded-2xl center text-center cursor-pointer text-4xl animate-[rainbowShadow_2s_linear_infinite] bg-slate-950 text-white hover:bg-white hover:text-slate-950"
       >
         HERE'S MY CV
