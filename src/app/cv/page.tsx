@@ -91,6 +91,18 @@ export default function Page() {
           <ExperienceCard experiences={experiences} />
         </div>
         <div className="flex flex-col gap-6 px-4 py-2 bg-green-100 row-span-5">
+          <Card header="Contact">
+            <div>
+              <div className="flex items-center gap-2">
+                <img src={"./mail.svg"} />
+                <p>olahjendev@gmail.com</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <img src={"./telephone.svg"} />
+                <p>+36705551310</p>
+              </div>
+            </div>
+          </Card>
           <Card
             header="Skills"
             headerIconPath="/lightning.svg"

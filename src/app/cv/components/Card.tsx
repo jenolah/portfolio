@@ -1,3 +1,5 @@
+import type { ReactElement } from "react";
+
 type Props = {
   header: string;
   headerIconPath?: string;
@@ -5,6 +7,7 @@ type Props = {
   date?: string;
   description?: string;
   list?: string[];
+  children?: ReactElement;
 };
 
 export const Card = ({
@@ -14,6 +17,7 @@ export const Card = ({
   date,
   description,
   list,
+  children,
 }: Props) => {
   return (
     <div className="flex flex-col gap-2">
@@ -39,6 +43,7 @@ export const Card = ({
           ))}
         </ul>
       )}
+      {children}
     </div>
   );
 };
