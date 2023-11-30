@@ -9,9 +9,9 @@ export const Sky = () => {
     "linear-gradient(0deg, rgba(164,184,173,0) 21%, rgba(45,154,253,0.49625787815126055) 84%)";
 
   return (
-    <div>
+    <>
       <div
-        className={`animate-[dayNight_20s_linear_infinite]`}
+        className="animate-dayNight"
         style={{
           width: "100%",
           height: "100vh",
@@ -41,7 +41,7 @@ export const Sky = () => {
       {stars.map(({ x, y }, index) => (
         <div
           key={index}
-          className={`animate-[stars_20s_linear_infinite]`}
+          className="animate-stars"
           style={{
             zIndex: -9996,
             height: 2,
@@ -53,6 +53,6 @@ export const Sky = () => {
           }}
         ></div>
       ))}
-    </div>
+    </>
   );
 };

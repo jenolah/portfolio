@@ -14,7 +14,6 @@ const config: Config = {
           "20%": { background: "rgb(176,254,255)" },
           "25%": { background: "rgb(241,175,87)" },
           "30%": { background: "rgb(32,34,69)" },
-          "50%": { background: "rgb(32,34,69)" },
           "70%": { background: "rgb(32,34,69)" },
           "75%": { background: "rgb(241,175,87)" },
           "80%": { background: "rgb(176,254,255)" },
@@ -27,6 +26,12 @@ const config: Config = {
           "70%": { opacity: "1" },
           "75%": { opacity: "0" },
           "100%": { opacity: "0" },
+        },
+        sun: {
+          "0%": { transform: "rotate(90deg)" },
+          "30%": { transform: "rotate(0deg)", display: "none" },
+          "70%": { transform: "rotate(180deg)", display: "none" },
+          "100%": { transform: "rotate(90deg)" },
         },
         rainbowShadow: {
           "0%": {
@@ -50,6 +55,12 @@ const config: Config = {
               "0px 0px 15px 5px rgb(255,0,0), 0px 0px 30px 5px rgb(255,255,0), 0px 0px 45px 5px rgb(0,192,255)",
           },
         },
+      },
+      animation: {
+        dayNight: "dayNight 20s linear infinite",
+        stars: "stars 20s linear infinite",
+        rainbowShadow: "rainbowShadow 3s linear infinite",
+        sun: "sun 20s linear infinite",
       },
     },
   },
