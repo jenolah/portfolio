@@ -10,9 +10,16 @@ export const Intro = () => {
       </div>
       <a
         href="/Jen-Eng.pdf"
-        className="p-4 rounded-2xl center text-center cursor-pointer text-4xl animate-[rainbowShadow_2s_linear_infinite] bg-slate-950 text-white hover:bg-white hover:text-slate-950"
+        download="Jen-Olah-CV"
+        className="p-4 rounded-2xl center text-center cursor-pointer text-4xl animate-rainbowShadow bg-slate-950 text-white hover:bg-white hover:text-slate-950"
       >
-        HERE'S MY CV
+        DOWNLOAD MY CV
+      </a>
+      <a
+        href="/Jen-Eng.pdf"
+        className="center text-center cursor-pointer text-2xl text-white hover:text-slate-950"
+      >
+        OR JUST CHECK IT OUT
       </a>
     </div>
   );
