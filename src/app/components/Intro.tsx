@@ -9,15 +9,15 @@ export const Intro = () => {
         <IconLinks />
       </div>
       <a
-        href="/Jen-Eng.pdf"
+        href="/Jen-Olah-CV.pdf"
         download="Jen-Olah-CV"
-        className="p-4 rounded-2xl center text-center cursor-pointer text-4xl animate-rainbowShadow bg-slate-950 text-white hover:bg-white hover:text-slate-950"
+        className="p-4 rounded-2xl text-center cursor-pointer text-4xl animate-rainbowShadow bg-slate-950 text-white hover:bg-white hover:text-slate-950"
       >
         DOWNLOAD MY CV
       </a>
       <a
-        href="/Jen-Eng.pdf"
-        className="center text-center cursor-pointer text-2xl text-white hover:text-slate-950 animate-pulse"
+        href="/Jen-Olah-CV.pdf"
+        className="p-2 rounded-xl text-center cursor-pointer text-2xl hover:text-white text-slate-950"
       >
         OR JUST CHECK IT OUT
       </a>
