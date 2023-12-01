@@ -33,6 +33,10 @@ const config: Config = {
           "70%": { transform: "rotate(180deg)", display: "none" },
           "100%": { transform: "rotate(90deg)" },
         },
+        clouds: {
+          "0%": { transform: "translateX(-100vw)" },
+          "100%": { transform: "translateX(100vw)" },
+        },
         rainbowShadow: {
           "0%": {
             boxShadow:
@@ -59,8 +63,9 @@ const config: Config = {
       animation: {
         dayNight: "dayNight 20s linear infinite",
         stars: "stars 20s linear infinite",
-        rainbowShadow: "rainbowShadow 3s linear infinite",
         sun: "sun 20s linear infinite",
+        clouds: "clouds 20s linear infinite",
+        rainbowShadow: "rainbowShadow 3s linear infinite",
       },
     },
   },
