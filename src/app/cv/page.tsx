@@ -52,7 +52,7 @@ const experiences: Experience[] = [
   {
     title: "Manual Software Tester",
     company: "Bug Factory Kft, Budapest",
-    date: "Oct 1019 - Jul 2020 - 10 mos",
+    date: "Oct 2019 - Jul 2020 - 10 mos",
     description: [
       <p>
         I led and supervised a team, managed tasks,{" "}
@@ -76,30 +76,38 @@ export default function Page() {
       className={`${inter.className} bg-white text-slate-950 mx-auto`}
       style={{ width: "21cm", height: "29.7cm" }}
     >
-      <div className="grid grid-cols-4 grid-rows-6 h-full">
-        <div className="py-2 bg-green-100 col-span-3 flex flex-col justify-center font-mono relative">
+      <div className="grid grid-cols-7 grid-rows-6 h-full">
+        <div className="py-2 bg-green-100 col-span-5 flex flex-col justify-center font-mono relative">
           <h1 className="text-center text-6xl relative">Jennifer Oláh</h1>
           <h2 className="text-center relative ">Web developer</h2>
         </div>
         <PictureFrame />
-        <div className="grid col-span-3 row-span-5 bg-white px-7 py-2 ">
+        <div className="grid col-span-5 row-span-5 bg-white px-7 py-2 ">
           <Card
             header="About me"
             headerIconPath="/person.svg"
-            description="I have ~2 years experience working as a frontend developer. I retained my QA mindset from my earlier career - I love producing clean, quality code and I love learning new things that help me achieve this."
+            description="I have 2 years experience working as a frontend developer. I retained my QA mindset from my earlier career - I love producing clean, quality code and I love learning new things that help me achieve this."
           />
           <ExperienceCard experiences={experiences} />
         </div>
-        <div className="flex flex-col gap-6 px-4 py-2 bg-green-100 row-span-5">
+        <div className="flex flex-col col-span-2 gap-6 px-4 py-2 bg-green-100 row-span-5">
           <Card header="Contact">
-            <div>
-              <div className="flex items-center gap-2">
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2">
                 <img src={"./mail.svg"} />
-                <p>olahjendev@gmail.com</p>
+                <p>&#111;lahjende&#118;&#64;g&#109;ail&#46;&#99;om</p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex gap-2">
                 <img src={"./telephone.svg"} />
-                <p>+36705551310</p>
+                <p>+36&#55;&#48;5551&#51;10</p>
+              </div>
+              <div className="flex gap-2">
+                <img src={"./gh-logo-small.svg"} />
+                <p>github.com/jenolah</p>
+              </div>
+              <div className="flex items-start gap-2">
+                <img src={"./li-logo-small.svg"} />
+                <p>linkedin.com/in/olah-dzsenifer</p>
               </div>
             </div>
           </Card>

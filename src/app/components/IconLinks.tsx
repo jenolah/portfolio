@@ -2,7 +2,7 @@ export const IconLinks = () => {
   return (
     <div className="flex gap-3 justify-center">
       <a
-        href="https://www.linkedin.com/in/ol%C3%A1h-dzsenifer/"
+        href="https://www.linkedin.com/in/olah-dzsenifer/"
         target="_blank"
         rel="noopener noreferrer"
       >
