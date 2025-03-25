@@ -37,7 +37,7 @@ export const Card = ({
       )}
       {description && <p>{description}</p>}
       {list && (
-        <ul className="px-4">
+        <ul className="px-4 list-outside">
           {list.map((list, i) => (
             <li key={i}>{list}</li>
           ))}

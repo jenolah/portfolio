@@ -38,7 +38,7 @@ p {
 
 @layer components {
   .title {
-    @apply my-2 text-green-800 underline underline-offset-4 font-mono flex items-center gap-2;
+    @apply my-2 text-amber-950 bg-amber-300 p-1 rounded-2xl font-mono flex items-center justify-center gap-2;
   }
 }
 
@@ -64,3 +64,72 @@ body {
     linear-gradient(#000000 0 0) bottom/67% 58% no-repeat;
   background: #fff;
 }
+
+.superbg {
+  background-color: #cbfbf1;
+  /* opacity: 0.8; */
+  background-image: linear-gradient(
+      30deg,
+      #96f7e4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #96f7e4 87.5%,
+      #96f7e4
+    ),
+    linear-gradient(
+      150deg,
+      #96f7e4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #96f7e4 87.5%,
+      #96f7e4
+    ),
+    linear-gradient(
+      30deg,
+      #96f7e4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #96f7e4 87.5%,
+      #96f7e4
+    ),
+    linear-gradient(
+      150deg,
+      #96f7e4 12%,
+      transparent 12.5%,
+      transparent 87%,
+      #96f7e4 87.5%,
+      #96f7e4
+    ),
+    linear-gradient(
+      60deg,
+      #96f7e477 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #96f7e477 75%,
+      #96f7e477
+    ),
+    linear-gradient(
+      60deg,
+      #96f7e477 25%,
+      transparent 25.5%,
+      transparent 75%,
+      #96f7e477 75%,
+      #96f7e477
+    );
+  background-size: 56px 98px;
+  background-position:
+    0 0,
+    0 0,
+    28px 49px,
+    28px 49px,
+    0 0,
+    28px 49px;
+}
+/* background-color: #cbfbf1;
+  /* opacity: 0.8; */
+/* background-image: repeating-radial-gradient(
+      circle at 100% 0,
+      transparent 0,
+      #cbfbf1 28px
+    ),
+    repeating-linear-gradient(#96f7e455, #96f7e4);  */

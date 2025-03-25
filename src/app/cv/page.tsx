@@ -2,9 +2,12 @@ import { ExperienceCard } from "@/app/cv/components/ExperienceCard";
 import type { Experience } from "@/app/cv/components/ExperienceCard";
 import { Card } from "@/app/cv/components/Card";
 import { PictureFrame } from "./components/PictureFrame";
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["100", "300", "400", "500", "700"],
+  subsets: ["latin"],
+});
 
 const experiences: Experience[] = [
   {
@@ -57,7 +60,7 @@ const experiences: Experience[] = [
       <p>
         I led and supervised a team, managed tasks,{" "}
         <b>trained new colleagues</b> and organized testing processes. I also
-        conducted manual testing on Android and iOS <b>mobile apps</b> with
+        conducted manual testing on Android and iOS <b>mobile apps</b> with{" "}
         <b>documentation</b> of test results.
       </p>,
     ],
@@ -73,16 +76,16 @@ const experiences: Experience[] = [
 export default function Page() {
   return (
     <div
-      className={`${inter.className} bg-white text-slate-950 mx-auto`}
+      className={`${roboto.className} text-slate-950 mx-auto superbg border-2 border-violet-300`}
       style={{ width: "21cm", height: "29.7cm" }}
     >
       <div className="grid grid-cols-7 grid-rows-6 h-full">
-        <div className="py-2 bg-green-100 col-span-5 flex flex-col justify-center font-mono relative">
+        <div className="py-2  col-span-5 flex flex-col justify-center font-mono relative">
           <h1 className="text-center text-6xl relative">Jennifer Oláh</h1>
           <h2 className="text-center relative ">Web developer</h2>
         </div>
         <PictureFrame />
-        <div className="grid col-span-5 row-span-5 bg-white px-7 py-2 ">
+        <div className="grid col-span-5 row-span-5 bg-white/80 border-t-2 border-r-2 rounded-r-2xl border-violet-300 px-7 py-2 ">
           <Card
             header="About me"
             headerIconPath="/person.svg"
@@ -90,7 +93,7 @@ export default function Page() {
           />
           <ExperienceCard experiences={experiences} />
         </div>
-        <div className="flex flex-col col-span-2 gap-6 px-4 py-2 bg-green-100 row-span-5">
+        <div className="flex flex-col col-span-2 gap-6 px-4 py-2row-span-5">
           <Card header="Contact">
             <div className="flex flex-col gap-2">
               <div className="flex gap-2">
