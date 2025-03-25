@@ -3,7 +3,7 @@ import { Intro } from "@/app/components/Intro";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden relative">
       <DynamicBackground />
       <Intro />
     </main>
